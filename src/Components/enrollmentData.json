@@ -1,0 +1,22 @@
+{
+  "12345678": {
+    "subject": "Math",
+    "grade": "A",
+    "attendance": "90%"
+  },
+  "87654321": {
+    "subject": "Science",
+    "grade": "B",
+    "attendance": "85%"
+  },
+  "23456789": {
+    "subject": "English",
+    "grade": "A+",
+    "attendance": "95%"
+  },
+  "98765432": {
+    "subject": "History",
+    "grade": "B+",
+    "attendance": "80%"
+  }
+}

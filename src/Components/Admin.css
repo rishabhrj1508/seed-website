@@ -1,0 +1,17 @@
+/* Add your custom styles for card, table, and other components */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #eef7ff;
+}

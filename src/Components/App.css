@@ -1,0 +1,364 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  font-weight: 200;
+  font-family: sans-serif;
+  background-color: white;
+  z-index: 5;
+  justify-content: space-around;
+  
+}
+
+.icon img {
+  padding: 0%;
+  margin-left: -15%;
+  width: 100px;
+  height: 100px;
+}
+
+.links {
+  width: 50%;
+  margin-left: 30%;
+}
+
+.links a {
+  color: black;
+  text-decoration: none;
+  margin: 2%;
+  font-weight: 300;
+  padding: 1%;
+  content: "";
+}
+
+.links a::before {
+  border-bottom: 2px solid black;
+  width: 0%;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  transition: 0.2s;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+.register-btn {
+  width: 12%;
+  height: 50px;
+}
+
+.register-btn button {
+  background-image: linear-gradient(to right, #03f920, #08e5f4);
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5%;
+  z-index: 1;
+  
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.middle {
+  display: flex;
+  background-color: rgb(221, 218, 216);
+  width: 100%;
+  height: 0rem;
+  z-index: 1;
+}
+
+.content {
+  text-align: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 100;
+  margin-top: -20%;
+  margin-left: 12%;
+  z-index: 1;
+  color: white;
+}
+
+.content h1 {
+  font-size: 3rem;
+}
+
+.content p {
+  font-size: 1.5rem;
+}
+
+.middle .register-btn {
+  display: flex;
+  margin-top: -20%;
+  margin-left: -45%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.profile-card {
+  width: 280px;
+  border: 1px solid #c5baba;
+  border-radius: 20px;
+  margin: 30px;
+  /* margin-left: 100px; */
+  height: 490px;
+  background-color: rgba(124, 133, 134, 0.256);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  margin: 15px;
+}
+
+.page {
+  height: 35rem;
+  width: 100%;
+  padding: 2%;
+}
+
+.para {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.para p {
+  text-decoration: underline;
+}
+
+.picture {
+  width: 280px;
+  height: 220px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.text {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-title {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-desc {
+  margin-top: 20px;
+  color: rgb(99, 97, 97);
+}
+
+.pc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.page2 {
+  height: 38rem;
+  width: 100%;
+  padding: 2%;
+  margin-top: 50px;
+}
+
+.pc2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 50px;
+  /* background-color: aqua; */
+  height: 100%;
+  width: 95%;
+}
+
+.page2 h2 {
+  text-align: center;
+  margin-top: 20px;
+  padding: 1%;
+  text-decoration: underline;
+}
+
+.pc2 .profile-card {
+  height: 550px;
+  background-color: rgba(128, 128, 128, 0.352);
+}
+
+.pc2 .profile-card h2 {
+  color: rgb(70, 68, 68);
+}
+
+.footer {
+  background-color: rgb(30, 26, 48);
+  padding: 2%;
+  height: 100px;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.footer div {
+  margin: 70px;
+}
+
+.footer a {
+  margin: 10px;
+  color: white;
+}
+
+.logof img {
+  height: 50px;
+  margin-left: 50px;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Responsive Styles */
+
+/* Mobile Phones (portrait and landscape) */
+@media only screen and (max-width: 1100px) {
+  .canvas {
+    display: none;
+  }
+  
+  .header,
+  .icon img,
+  .links,
+  .register-btn,
+  .middle .register-btn,
+  .content,
+  .profile-card,
+  .footer,
+  h2 ,h1,p{
+    display: none;
+  }
+
+  body::before {
+    content: "This website is only for laptops. Switch to laptop mode.";
+    display: block;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+.delete-button{
+
+  z-index: -400;
+}
+
+/* Mobile Phones (landscape) and Tablets */
+
+
+/* Laptops and Desktops */
+@media only screen and (min-width: 1025px) {
+  .canvas {
+    height: 40vh;
+  }
+
+  .header {
+    height: 12%;
+  }
+
+  .icon img {
+    width: 20%;
+    height: 12%;
+  }
+
+  .links {
+    width: 50%;
+    margin-left: 7%;
+  }
+
+  .register-btn {
+    width: 12%;
+  }
+
+  .middle .register-btn {
+    margin-top: -20%;
+    margin-left: -45%;
+  }
+
+  .content {
+    margin-top: -28%;
+    margin-left: 12%;
+  }
+
+  .profile-card {
+    width: 280px;
+    margin: 30px;
+    height: 490px;
+  }
+}
+
+.canvas {
+  width: 100%;
+}
